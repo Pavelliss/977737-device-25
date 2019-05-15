@@ -52,6 +52,9 @@
                 <h3>Фильтр:</h3>
                 <!--form will be here-->
                 <fieldset>
+                    <legend>Стоимость</legend>
+                </fieldset>
+                <fieldset>
                     <legend>Цвет</legend>
                     <ul>
                         <li>Черный</li>
@@ -70,6 +73,26 @@
                 </fieldset>
                 <button type="submit" class="button">Показать</button>
             </section>
+            <section class="catalog-sorting">
+				<h3>Сортировка:</h3>
+				<ul class="sorting-list">
+					<li><a href="#">По цене</a></li>
+					<li><a href="#">По типу</a></li>
+					<li><a href="#">По популярности</a></li>
+				</ul>
+				<ul>
+					<li>
+						<a href="#">
+							<span class="visualy-hidden">От большего к меньшему</span>
+						</a>
+					<li>
+					<li>
+						<a href="#">
+							<span class="visualy-hidden">От меньшего к большему</span>
+						</a>
+					</li>
+				</ul>
+			</section>
             <ul class="catalog-list">
                 <li>
                     <img src="img/item-1.jpg" class="image-catalog" width="360" height="380" alt="Селфи-палка любительская">
@@ -108,6 +131,21 @@
                     </div>
                 </li>
             </ul>
+            <div class="pagination">
+				<a class="back-next">Назад</a>
+				<ul class="pagination-list">
+					<li>
+						<a>1</a>
+					</li>
+					<li>
+						<a href="#">2</a>
+					</li>
+					<li>
+						<a href="#">3</a>
+					</li>
+				</ul>
+				<a class="back-next">Вперед</a>
+			</div>
         </main>
         <footer>
             <div>
@@ -149,7 +187,7 @@
                     </li>
                     <li>
                         <a href="#">
-                            <span class="visualy-hidden">insta</span>
+                            <span class="visualy-hidden">instagram</span>
                         </a>
                     </li>
                     <li>
