@@ -12,7 +12,9 @@
             </a>
             <div class="main-menu">
                 <div class="form-search">
-                <!--form will be here-->
+                    <form action="https://echo.htmlacademy.ru" method="post">
+                        <input type="search" name="search" placeholder="Поиск по сайту">
+                    </form>
                 </div>
                 <div class="authorization">
                     <a href="#">Войти</a>
@@ -253,10 +255,19 @@
         </footer>
         <!--Popups-->
         <div class="popup popup-message">
-            <!--form wiil be here-->
-            <button type="button" class="button-close">
-				<span class="visualy-hidden">Закрыть</span>
-			</button>
+            <form action="https://echo.htmlacademy.ru" method="post">
+                <label>
+                    Ваше имя:<input type="text" name="user-name" placeholder="Имя Фамилия">
+                </label>
+                <label>
+                    Ваш e-mail:<input type="email" name="user-email" placeholder="email@example.com">
+                </label>
+                <textarea name="text-message" placeholder="В свободной форме"></textarea>
+                <button type="submit" class="button">Отправить</button>
+                <button type="button" class="button-close">
+    				<span class="visualy-hidden">Закрыть</span>
+    			</button>
+            </form>
         </div>
         <div class="popup popup-map">
             <img src="#" alt="г. Москва, ул. Строителей, 15">

@@ -11,7 +11,9 @@
             </a>
             <div class="main-menu">
                 <div class="form-search">
-                <!--form will be here-->
+                    <form action="https://echo.htmlacademy.ru" method="post">
+                        <input type="search" name="search" placeholder="Поиск по сайту">
+                    </form>
                 </div>
                 <div class="authorization">
                     <a href="#">Валентин Петухов</a>
@@ -50,28 +52,57 @@
             </ul>
             <section class="filter-catalog">
                 <h3>Фильтр:</h3>
-                <!--form will be here-->
-                <fieldset>
-                    <legend>Стоимость</legend>
-                </fieldset>
-                <fieldset>
-                    <legend>Цвет</legend>
-                    <ul>
-                        <li>Черный</li>
-                        <li>Белый</li>
-                        <li>Синий</li>
-                        <li>Красный</li>
-                        <li>Розовый</li>
-                    </ul>
-                </fieldset>
-                <fieldset>
-                    <legend>Bluetooth</legend>
-                    <ul>
-                        <li>Есть</li>
-                        <li>Нет</li>
-                    </ul>
-                </fieldset>
-                <button type="submit" class="button">Показать</button>
+                <form action="https://echo.htmlacademy.ru" method="post">
+                    <fieldset>
+                        <legend>Стоимость</legend>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Цвет</legend>
+                        <ul>
+                            <li>
+                                <label>
+                                    Черный<input type="checkbox" name="black" checked>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    Белый<input type="checkbox" name="white">
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    Синий<input type="checkbox" name="blue" checked>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    Красный<input type="checkbox" name="red" checked>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    Розовый<input type="checkbox" name="pink">
+                                </label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Bluetooth</legend>
+                        <ul>
+                            <li>
+                                <label>
+                                    Есть<input type="radio" name="Bluetooth" value="with Bluetooth" checked>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    Нет<input type="radio" name="Bluetooth" value="without-Bluetooth">
+                                </label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <button type="submit" class="button">Показать</button>
+                </form>
             </section>
             <section class="catalog-sorting">
 				<h3>Сортировка:</h3>
