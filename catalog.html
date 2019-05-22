@@ -3,16 +3,19 @@
     <head>
         <meta charset="utf-8">
         <title>Моноподы</title>
+        <link href="css/normalize.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
         <header class="main-header">
             <a href="index.html" class="logo main-logo">
-                <img src="img/logo-device.svg" width="163" height="35"  alt="DEVICE">
+                <img src="img/logo-device.svg" width="163" height="35"  alt="DEVICE logo">
             </a>
             <div class="main-menu">
                 <div class="form-search">
                     <form action="https://echo.htmlacademy.ru" method="post">
                         <input type="search" name="search" placeholder="Поиск по сайту">
+                        <a href="#" class="search-button">Найти</a>
                     </form>
                 </div>
                 <div class="authorization">
@@ -28,7 +31,7 @@
             </div>
             <nav class="main-nav">
                 <h2>Каталог товаров</h2>
-                <ul>
+                <ul class="header-service">
                     <li><a href="#">Доставка</a></li>
                     <li><a href="#">Гарантия</a></li>
                     <li><a href="#">Контакты</a></li>
@@ -139,7 +142,7 @@
                     <p class="price">500 руб.</p>
                     <div class="popup-catalog">
                         <a href="#" class="button">В корзину</a>
-                        <a href="#">Добавить к сравнению</a>
+                        <a href="#" class="popup-catalog-item">Добавить к сравнению</a>
                     </div>
                 </li>
                 <li>
@@ -148,7 +151,7 @@
                     <p class="price">1 500 руб.</p>
                     <div class="popup-catalog">
                         <a href="#" class="button">В корзину</a>
-                        <a href="#">Добавить к сравнению</a>
+                        <a href="#" class="popup-catalog-item">Добавить к сравнению</a>
                     </div>
                 </li>
                 <li>
@@ -157,7 +160,7 @@
                     <p class="price">2 500 руб.</p>
                     <div class="popup-catalog">
                         <a href="#" class="button">В корзину</a>
-                        <a href="#">Добавить к сравнению</a>
+                        <a href="#" class="popup-catalog-item">Добавить к сравнению</a>
                     </div>
                 </li>
                 <li>
@@ -166,12 +169,12 @@
                     <p class="price">4 900 руб.</p>
                     <div class="popup-catalog">
                         <a href="#" class="button">В корзину</a>
-                        <a href="#">Добавить к сравнению</a>
+                        <a href="#" class="popup-catalog-item">Добавить к сравнению</a>
                     </div>
                 </li>
             </ul>
             <div class="pagination">
-				<a class="back-next">Назад</a>
+				<a href="#" class="back-next"><span>Назад</span></a>
 				<ul class="pagination-list">
 					<li>
 						<a>1</a>
@@ -183,13 +186,13 @@
 						<a href="#">3</a>
 					</li>
 				</ul>
-				<a class="back-next">Вперед</a>
+				<a href="#" class="back-next"><span>Вперед</span></a>
 			</div>
         </main>
-        <footer>
-            <div>
+        <footer class="footer">
+            <div class="footer-top">
                 <a href="index.html" class="logo footer-logo">
-                    <img src="img/logo-device.svg" width="163" height="35" alt="DEVICE">
+                    <img src="img/logo-device-footer.svg" width="163" height="35" alt="DEVICE">
                 </a>
                 <div class="authorization authorization-footer">
                     <a href="#">Валентин Петухов</a>
@@ -215,7 +218,7 @@
                         <a href="#">Контакты</a>
                     </li>
                 </ul>
-                <a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
+                <a href="tel:+74954959595" class="tel">Тел.: +7 (495) 495-95-95</a>
             </div>
             <div class="social">
                 <ul class="social-list">
@@ -240,5 +243,6 @@
                 </a>
             </div>
         </footer>
+        <script src="http://localhost:35729/livereload.js"></script>
     </body>
 </html>

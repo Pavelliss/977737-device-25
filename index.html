@@ -3,17 +3,20 @@
     <head>
         <meta charset="utf-8">
         <title>HTML Academy: Девайс</title>
+        <link href="css/normalize.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
         <header class="main-header">
             <h1 class="visualy hidden">Магазин гаджетов Device</h1>
             <a class="logo main-logo">
-                <img src="img/logo-device.svg" width="163" height="35"  alt="DEVICE">
+                <img src="img/logo-device.svg" width="163" height="35"  alt="DEVICE logo">
             </a>
             <div class="main-menu">
                 <div class="form-search">
                     <form action="https://echo.htmlacademy.ru" method="post">
                         <input type="search" name="search" placeholder="Поиск по сайту">
+                        <a href="#" class="search-button">Найти</a>
                     </form>
                 </div>
                 <div class="authorization">
@@ -28,7 +31,7 @@
             </div>
             <nav class="main-nav">
                 <h2>Каталог товаров</h2>
-                <ul>
+                <ul class="header-service">
                     <li><a href="#">Доставка</a></li>
                     <li><a href="#">Гарантия</a></li>
                     <li><a href="#">Контакты</a></li>
@@ -133,9 +136,9 @@
 			</ul>
 			<section class="service">
 				<ul class="service-slider">
-					<li>Доставка</li>
-					<li>Гарантия</li>
-					<li>Кредит</li>
+					<li class="button button-service">Доставка</li>
+					<li class="button button-service">Гарантия</li>
+					<li class="button button-service">Кредит</li>
 				</ul>
 				<div class="service-item">
 					<h3>Доставка</h3>
@@ -200,10 +203,10 @@
                 </section>
             </div>
         </main>
-        <footer>
-            <div>
+        <footer class="footer">
+            <div class="footer-top">
                 <a class="logo footer-logo">
-                    <img src="img/logo-device.svg" width="163" height="35" alt="DEVICE">
+                    <img src="img/logo-device-footer.svg" width="163" height="35" alt="DEVICE">
                 </a>
                 <div class="authorization authorization-footer">
                     <a href="#">Войти</a>
@@ -228,7 +231,7 @@
                         <a href="#">Контакты</a>
                     </li>
                 </ul>
-                <a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
+                <a href="tel:+74954959595" class="tel">Тел.: +7 (495) 495-95-95</a>
             </div>
             <div class="social">
                 <ul class="social-list">
@@ -262,7 +265,9 @@
                 <label>
                     Ваш e-mail:<input type="email" name="user-email" placeholder="email@example.com">
                 </label>
-                <textarea name="text-message" placeholder="В свободной форме"></textarea>
+                <label>
+                    Текст письма:<textarea name="text-message" placeholder="В свободной форме"></textarea>
+                </label>
                 <button type="submit" class="button">Отправить</button>
                 <button type="button" class="button-close">
     				<span class="visualy-hidden">Закрыть</span>
@@ -275,5 +280,6 @@
                 <span class="visualy-hidden">Закрыть</span>
             </button>
         </div>
+        <script src="http://localhost:35729/livereload.js"></script>
   </body>
   </html>
