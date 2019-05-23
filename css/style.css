@@ -1,27 +1,39 @@
 @font-face {
-    font-family: 'gilroylight';
+    font-family: 'gilroy';
     src: url('../fonts/gilroyextra.woff2') format('woff2'),
-         url('../fonts/gilroyextra.woff') format('woff'),
-         url('../fonts/gilroyextrabold.woff2') format('woff2'),
-         url('../fonts/gilroyextrabold.woff') format('woff');
+         url('../fonts/gilroyextra.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: '';
+    font-family: 'gilroy bold';
+    src: url('../fonts/gilroyextrabold.woff2') format('woff2'),
+         url('../fonts/gilroyextrabold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'opensans';
     src: url('../fonts/opensans.woff2') format('woff2'),
-         url('../fonts/opensans.woff') format('woff'),
-         url('../fonts/opensansbold.woff2') format('woff2'),
-         url('../fonts/opensansbold.woff') format('woff');
+         url('../fonts/opensans.woff') format('woff');
     font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'opensans bold';
+    src: url('../fonts/opensansbold.woff2') format('woff2'),
+         url('../fonts/opensansbold.woff') format('woff');
+    font-weight: bold;
     font-style: normal;
 }
 
 body {
     margin: 0;
 
-    font-family: 'gilroylight', sans-serif;
+    font-family: 'gilroy bold', "Arial", sans-serif;
     font-size: 18px;
     line-height: 24px;
     font-weight: 400;
@@ -36,7 +48,7 @@ a {
     display: block;
 
     text-transform: uppercase;
-    letter-spacing: 2.15px;
+    letter-spacing: 0.2em;
 
     background-color: #f0c52e;
     color: #000000;
@@ -58,7 +70,7 @@ a {
     font-weight: 300;
     line-height: 30px;
     color: #000000;
-    letter-spacing: 0.15px;
+    letter-spacing: 0.01em;
 }
 
 .logo:hover,
@@ -76,12 +88,12 @@ a {
     opacity: 0.3;
 }
 
-input[type="search"] {
+.form-search input[type="search"] {
     font-family: 'opensans', sans-serif;
     font-size: 15px;
     font-weight: 300;
     line-height: 30px;
-    letter-spacing: 0.15px;
+    letter-spacing: 0.01em;
 
     color: #000000;
     background-color: #f7e296;
@@ -89,24 +101,24 @@ input[type="search"] {
     opacity: 0.3;
 }
 
-input[type="search"]::-webkit-input-placeholder {
+.form-search input[type="search"]::-webkit-input-placeholder {
     color: #000000;
 }
 
-input[type="search"]::-moz-placeholder {
+.form-search input[type="search"]::-moz-placeholder {
     color: #000000;
 }
 
-input[type="search"]:hover {
+.form-search input[type="search"]:hover {
     opacity: 0.6;
 }
 
-input[type="search"]:focus {
+.form-search input[type="search"]:focus {
     opacity: 1;
     outline: none;
 }
 
-input[type="search"]:focus+.search-button {
+.form-search input[type="search"]:focus+.search-button {
     border: 2px solid #000000;
     opacity: 1;
 }
@@ -136,7 +148,7 @@ input[type="search"]:focus+.search-button {
     font-weight: 400;
     line-height: 24px;
     text-transform: uppercase;
-    letter-spacing: 3.6px;
+    letter-spacing: 0.2em;
 }
 
 .main-nav ul {
@@ -155,30 +167,30 @@ input[type="search"]:focus+.search-button {
     font-size: 47px;
     font-weight: 400;
     line-height: 56px;
-    letter-spacing: 0.17px;
+    letter-spacing: 0.01em;
 }
 
 .slader-list p {
     font-family: 'opensans', sans-serif;
     font-size: 15px;
     font-weight: 300;
-    line-height: 30px
-    letter-spacing: 0.15px;
+    line-height: 30px;
+    letter-spacing: 0.01em;
     color: #464646;
 
     background-color: #ffffff;
 }
 
-table th {
+.table-slider th {
     font-family: 'opensans', sans-serif;
     font-size: 13px;
     font-weight: 300;
     line-height: 20px;
-    letter-spacing: 0.13px;
+    letter-spacing: 0.01em;
 }
 
-table td {
-    font-family: 'gilroyextra', sans-serif;
+.table-slider td {
+    font-family: 'gilroy';
     font-size: 36px;
     font-weight: 300;
     line-height: 48px;
@@ -218,15 +230,15 @@ table td {
     font-size: 47px;
     font-weight: 400;
     line-height: 48px;
-    letter-spacing: 0.21px;
+    letter-spacing: 0.01em;
 }
 
 .service-item p {
     font-family: 'opensans', sans-serif;
     font-size: 15px;
     font-weight: 300;
-    line-height: 30px
-    letter-spacing: 0.15px;
+    line-height: 30px;
+    letter-spacing: 0.01em;
     color: #464646;
 }
 
@@ -265,15 +277,15 @@ table td {
     font-size: 47px;
     font-weight: 400;
     line-height: 48px;
-    letter-spacing: 0.21px;
+    letter-spacing: 0.01em;
 }
 
 .info p {
     font-family: 'opensans', sans-serif;
     font-size: 15px;
     font-weight: 300;
-    line-height: 30px
-    letter-spacing: 0.15px;
+    line-height: 30px;
+    letter-spacing: 0.01em;
     color: #464646;
 }
 
@@ -293,7 +305,7 @@ table td {
     font-size: 47px;
     font-weight: 400;
     line-height: 48px;
-    letter-spacing: 0.17px;
+    letter-spacing: 0.01em;
 }
 
 .breadcrumbs {
@@ -305,7 +317,7 @@ table td {
     font-size: 14px;
     font-weight: 300;
     line-height: 24px;
-    letter-spacing: 0.14px;
+    letter-spacing: 0.01em;
     color: inherit;
 
     opacity: 0.3;
@@ -328,11 +340,11 @@ table td {
     font-weight: 400;
     line-height: 24px;
     text-transform: uppercase;
-    letter-spacing: 0.91px;
+    letter-spacing: 0.2em;
 }
 
 .range-filter input[type="text"] {
-    font-family: Gilroy;
+    font-family: 'gilroy', sans-serif;
     font-size: 14px;
     font-weight: 300;
     line-height: 24px;
@@ -362,7 +374,7 @@ table td {
     font-size: 14px;
     font-weight: 300;
     line-height: 40px;
-    letter-spacing: 0.14px;
+    letter-spacing: 0.01em
 }
 
 .catalog-sorting {
@@ -404,11 +416,11 @@ table td {
 }
 
 .catalog-list .price {
-    font-family: Gilroy;
+    font-family: 'Gilroy', sans-serif;
     font-size: 16px;
     font-weight: 300;
     line-height: 24px;
-    letter-spacing: 0.16px;
+    letter-spacing: 0.01em;
     color: #464646;
 }
 
@@ -417,7 +429,7 @@ table td {
     font-size: 13px;
     font-weight: 300;
     line-height: 36px;
-    letter-spacing: 0.13px;
+    letter-spacing: 0.01em;
     color: #000000;
 
     opacity: 0.5;
@@ -488,7 +500,7 @@ table td {
     font-size: 15px;
     font-weight: 300;
     line-height: 36px;
-    letter-spacing: 0.15px;
+    letter-spacing: 0.01em;
     color: #ffffff;
 
     opacity: 0.7;
@@ -500,7 +512,7 @@ table td {
 
 .contacts a {
     text-transform: uppercase;
-    letter-spacing: 3.6px;
+    letter-spacing: 0.2em;
     color: #ffffff;
 }
 
