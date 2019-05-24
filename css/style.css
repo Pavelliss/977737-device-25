@@ -7,7 +7,7 @@
 }
 
 @font-face {
-    font-family: 'gilroy bold';
+    font-family: 'gilroy';
     src: url('../fonts/gilroyextrabold.woff2') format('woff2'),
          url('../fonts/gilroyextrabold.woff') format('woff');
     font-weight: bold;
@@ -23,7 +23,7 @@
 }
 
 @font-face {
-    font-family: 'opensans bold';
+    font-family: 'opensans';
     src: url('../fonts/opensansbold.woff2') format('woff2'),
          url('../fonts/opensansbold.woff') format('woff');
     font-weight: bold;
@@ -33,10 +33,10 @@
 body {
     margin: 0;
 
-    font-family: 'gilroy bold', "Arial", sans-serif;
+    font-family: 'gilroy', "Arial", sans-serif;
     font-size: 18px;
     line-height: 24px;
-    font-weight: 400;
+    font-weight: bold;
     color: #000000;
 }
 
@@ -65,7 +65,7 @@ a {
 }
 
 .main-header a {
-    font-family: 'opensans', sans-serif;
+    font-family: 'opensans', "Arial", sans-serif;
     font-size: 15px;
     font-weight: 300;
     line-height: 30px;
@@ -88,7 +88,7 @@ a {
 }
 
 .form-search input[type="search"] {
-    font-family: 'opensans', sans-serif;
+    font-family: 'opensans', "Arial", sans-serif;
     font-size: 15px;
     font-weight: 300;
     line-height: 30px;
@@ -143,7 +143,7 @@ a {
 .header-service a {
     font-family: inherit;
     font-size: 18px;
-    font-weight: 400;
+    font-weight: inherit;
     line-height: 24px;
     text-transform: uppercase;
     letter-spacing: 0.2em;
@@ -163,12 +163,11 @@ a {
 
 .slader-list b {
     font-size: 47px;
-    font-weight: 400;
     line-height: 56px;
 }
 
 .slader-list p {
-    font-family: 'opensans', sans-serif;
+    font-family: 'opensans', "Arial", sans-serif;
     font-size: 15px;
     font-weight: 300;
     line-height: 30px;
@@ -178,14 +177,13 @@ a {
 }
 
 .table-slider th {
-    font-family: 'opensans', sans-serif;
+    font-family: 'opensans', "Arial", sans-serif;
     font-size: 13px;
     font-weight: 300;
     line-height: 20px;
 }
 
 .table-slider td {
-    font-family: 'gilroy';
     font-size: 36px;
     font-weight: 300;
     line-height: 48px;
@@ -223,12 +221,11 @@ a {
 
 .service-item h3 {
     font-size: 47px;
-    font-weight: 400;
     line-height: 48px;
 }
 
 .service-item p {
-    font-family: 'opensans', sans-serif;
+    font-family: 'opensans', "Arial", sans-serif;
     font-size: 15px;
     font-weight: 300;
     line-height: 30px;
@@ -268,12 +265,11 @@ a {
 
 .info h3 {
     font-size: 47px;
-    font-weight: 400;
     line-height: 48px;
 }
 
 .info p {
-    font-family: 'opensans', sans-serif;
+    font-family: 'opensans', "Arial", sans-serif;
     font-size: 15px;
     font-weight: 300;
     line-height: 30px;
@@ -303,7 +299,7 @@ a {
 }
 
 .breadcrumbs a {
-    font-family: 'opensans', sans-serif;
+    font-family: 'opensans', "Arial", sans-serif;
     font-size: 14px;
     font-weight: 300;
     line-height: 24px;
@@ -326,14 +322,12 @@ a {
 .filter-catalog h3,
 .catalog-sorting h3{
     font-size: 16px;
-    font-weight: 400;
     line-height: 24px;
     text-transform: uppercase;
     letter-spacing: 0.2em;
 }
 
 .range-filter input[type="text"] {
-    font-family: 'gilroy', sans-serif;
     font-size: 14px;
     font-weight: 300;
     line-height: 24px;
@@ -359,7 +353,7 @@ a {
 }
 
 .filter-catalog label {
-    font-family: 'opensans', sans-serif;
+    font-family: 'opensans', "Arial", sans-serif;
     font-size: 14px;
     font-weight: 300;
     line-height: 40px;
@@ -375,7 +369,7 @@ a {
 }
 
 .sorting-list a {
-    font-family: 'opensans', sans-serif;
+    font-family: 'opensans', "Arial", sans-serif;
     font-size: 14px;
     font-weight: 300;
     line-height: 18px;
@@ -404,7 +398,6 @@ a {
 }
 
 .catalog-list .price {
-    font-family: 'Gilroy', sans-serif;
     font-size: 16px;
     font-weight: 300;
     line-height: 24px;
@@ -412,7 +405,7 @@ a {
 }
 
 .popup-catalog-item {
-    font-family: 'opensans', sans-serif;
+    font-family: 'opensans', "Arial", sans-serif;
     font-size: 13px;
     font-weight: 300;
     line-height: 36px;
@@ -482,7 +475,7 @@ a {
 
 .footer-top a,
 .contacts address {
-    font-family: 'opensans', sans-serif;
+    font-family: 'opensans', "Arial", sans-serif;
     font-size: 15px;
     font-weight: 300;
     line-height: 36px;
@@ -502,7 +495,7 @@ a {
 }
 
 .contacts .tel {
-    font-family: 'opensans', sans-serif;
+    font-family: 'opensans', "Arial", sans-serif;
     font-size: 15px;
     font-weight: 300;
     line-height: 30px
@@ -518,7 +511,7 @@ a {
 .popup-message input[type="text"]::-webkit-input-placeholder,
 .popup-message input[type="email"]::-webkit-input-placeholder,
 .popup-message textarea[placeholder] {
-    font-family: 'opensans', sans-serif;
+    font-family: 'opensans', "Arial", sans-serif;
     font-size: 14px;
     font-weight: 400;
     line-height: 18px;
@@ -527,7 +520,7 @@ a {
 
 .popup-message input[type="text"]::-moz-placeholder,
 .popup-message input[type="email"]::-moz-placeholder {
-    font-family: 'opensans', sans-serif;
+    font-family: 'opensans', "Arial", sans-serif;
     font-size: 14px;
     font-weight: 400;
     line-height: 18px;
