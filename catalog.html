@@ -19,15 +19,15 @@
                     </form>
                 </div>
                 <div class="authorization-container">
-                    <div class="authorization">
-                        <a href="#">Валентин Петухов</a>
+                    <div class="authorization authorization-header">
+                        <a href="#" class="user-name">Валентин Петухов</a>
                         <a href="#">Выйти</a>
                     </div>
-                    <div>
+                    <div class="compare">
                         <a href="#">Сравнить</a>
                     </div>
-                    <div>
-                        <a href="#">Корзина</a>
+                    <div class="basket">
+                        <a href="#" >Корзина</a>
                     </div>
                 </div>
             </div>
@@ -38,15 +38,20 @@
                     <li><a href="#">Гарантия</a></li>
                     <li><a href="#">Контакты</a></li>
                 </ul>
-                <div class="cotalog-container cotalog-show">
+                <div class="cotalog-container">
                     <ul class="header-cotalog">
-                        <li><a href="#">Виртуальная реальность</a></li>
-                        <li><a href="#">Фитнеc-браслеты</a></li>
-                        <li><a href="#">Квадрокоптеры</a></li>
-                        <li><a href="catalog.html">Моноподы для селфи</a></li>
-                        <li><a href="#">Умные часы</a></li>
-                        <li></li>
-                        <li><a href="#">Экшн-камеры</a></li>
+                        <li>
+                            <a href="#">Виртуальная реальность</a>
+                            <a href="catalog.html">Моноподы для селфи</a>
+                            <a href="#">Экшн-камеры</a>
+                        </li>
+                        <li>
+                            <a href="#">Фитнеc-браслеты</a>
+                            <a href="#">Умные часы</a>
+                        </li>
+                        <li>
+                            <a href="#">Квадрокоптеры</a>
+                        </li>
                     </ul>
                 </div>
             </nav>
@@ -58,10 +63,33 @@
                 <li><a href="#">Каталог товаров</a></li>
                 <li><a>Моноподы для селфи</a></li>
             </ul>
-            <div class="catalog-container container">
+            <div class="catalog-sorting-h3">
+                <div class="h3"><h3>Фильтр:</h3></div>
+                <section class="catalog-sorting">
+                    <h3>Сортировка:</h3>
+                    <ul class="sorting-list">
+                        <li><a href="#">По цене</a></li>
+                        <li><a href="#">По типу</a></li>
+                        <li><a href="#">По популярности</a></li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <span class="visually-hidden">От большего к меньшему</span>
+                            </a>
+                        <li>
+                        <li>
+                            <a href="#">
+                                <span class="visually-hidden">От меньшего к большему</span>
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+            <div class="catalog-container ">
                 <div class="filter-background">
                     <section class="filter-catalog">
-                        <h3>Фильтр:</h3>
+                        <!--<div class="h3-container"><h3>Фильтр:</h3></div>-->
                         <form action="https://echo.htmlacademy.ru" method="post">
                             <fieldset>
                                 <legend>Стоимость</legend>
@@ -124,7 +152,7 @@
                     </section>
                 </div>
                 <div class="list-pagination-container">
-                    <section class="catalog-sorting">
+                    <!--<section class="catalog-sorting">
         				<h3>Сортировка:</h3>
         				<ul class="sorting-list">
         					<li><a href="#">По цене</a></li>
@@ -143,7 +171,7 @@
         						</a>
         					</li>
         				</ul>
-        			</section>
+        			</section>-->
                     <ul class="catalog-list">
                         <li>
                             <img src="img/item-1.jpg" class="image-catalog" width="360" height="380" alt="Селфи-палка любительская">
