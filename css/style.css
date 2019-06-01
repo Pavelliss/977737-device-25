@@ -1079,13 +1079,18 @@ img {
 }
 
 .filter-background {
-    position: relative;
+    width: 28%;
+
+    background-color: #efefef;
 
     outline: 1px solid red;
 }
 
 .filter-catalog {
-    /* width: 328px; */
+    display: flex;
+    justify-content: flex-end;
+    margin-left: auto;
+    width: 328px;
 }
 
 .filter-catalog h3,
@@ -1140,7 +1145,9 @@ img {
 /*catalog*/
 
 .list-pagination-container {
+    box-sizing: border-box;
     padding-left: 72px;
+    width: 72%;
 
     outline: 1px solid red;
 }
@@ -1185,7 +1192,7 @@ img {
     padding: 0;
     margin-left: -40px;
     margin-bottom: 40px;
-    width: 800px;
+    width: 832px;
 
     list-style: none;
 }
@@ -1231,6 +1238,7 @@ img {
     display: flex;
     justify-content: space-between;
     margin-bottom: 72px;
+    width: 760px;
 
     background-color: #ebebeb;
 }
