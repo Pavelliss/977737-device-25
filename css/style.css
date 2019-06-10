@@ -539,6 +539,8 @@ img {
     width: 80px;
 
     list-style: none;
+
+    z-index: 3;
 }
 
 .slides-button-list .slide-button {
@@ -593,7 +595,7 @@ img {
     width: 384px;
 }
 
-.slider-smart-Watch img {
+.slider-smart-watch img {
     margin-left: 95px;
     margin-top: 47px;
     margin-right: 135px;
@@ -638,7 +640,7 @@ img {
     z-index: 1;
 }
 
-.slider-smart-Watch .offers::after {
+.slider-smart-watch .offers::after {
     content: "02";
 
     position: absolute;
@@ -689,7 +691,7 @@ img {
     border-radius: 50%;
 }
 
-.slider-smart-Watch::after {
+.slider-smart-watch::after {
     content: "";
 
     position: absolute;
@@ -738,7 +740,7 @@ img {
     letter-spacing: 0.01em;
 }
 
-.slider-smart-Watch b {
+.slider-smart-watch b {
     padding-right: 98px;
 }
 
@@ -882,7 +884,7 @@ img {
     background-repeat: no-repeat;
 }
 
-.cotalog-smart-Watch .icon-container::before {
+.cotalog-smart-watch .icon-container::before {
     position: absolute;
     content: "";
     top: 32px;
@@ -1404,6 +1406,8 @@ img {
             box-shadow: 0 2px 1px 0 #cfcfcf;
     border-radius: 50%;
     cursor: pointer;
+
+    z-index: 1;
 }
 
 .range-controle .toggle-min {
@@ -2113,8 +2117,67 @@ img {
 
 /*Popups*/
 
-.popup-message {
+.popup {
     display: none;
+}
+
+.popup-message {
+    position: fixed;
+    top: 25%;
+    left: 50%;
+
+    width: 960px;
+    height: 553px;
+    margin-left: -480px;
+    padding: 95px 100px;
+    box-sizing: border-box;
+
+    box-shadow: 0 10px 20px rgba(4, 6, 6, 0.2);
+    background-color: #ffffff;
+
+    z-index: 10;
+}
+
+.popup-message form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.popup-message label {
+    display: flex;
+    flex-direction: column;
+
+    letter-spacing: 0.01em;
+}
+
+.popup-message input[type="text"],
+.popup-message input[type="email"] {
+    width: 360px;
+    min-height: 50px;
+    margin-top: 6px;
+    margin-bottom: 33px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+
+    border: none;
+}
+
+.popup-message input[type="text"] {
+    margin-right: 40px;
+}
+
+.popup-message textarea {
+    width: 760px;
+    min-height: 155px;
+    margin-top: 6px;
+    margin-bottom: 45px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+    box-sizing: border-box;
+	border: none;
+    resize: none;
 }
 
 .popup-message input,
@@ -2155,10 +2218,105 @@ img {
     background-color: #f6dada;
 }
 
+.popup-message button[type="submit"] {
+    width: 200px;
+
+    padding-top: 0;
+
+    font-weight: bold;
+
+    background-color: #ffffff;
+    border: none;
+
+    z-index: 1;
+}
+
+.button-close {
+    position: absolute;
+    top: 23px;
+    right: 22px;
+
+    width: 55px;
+    height: 55px;
+
+    background-color: #ffc600;
+    border-radius: 50%;
+    border: none;
+    opacity: 0.5;
+
+    cursor: pointer;
+
+    z-index: 12;
+}
+
+.button-close::before,
+.button-close::after {
+    content: "";
+
+    position: absolute;
+    top: 27px;
+    left: 14px;
+
+    width: 28px;
+    height: 2px;
+
+    background-color: #ffffff;
+}
+
+.button-close::before {
+    transform: rotate(45deg);
+}
+
+.button-close::after {
+    transform: rotate(-45deg);
+}
+
 .popup-map {
-    display: none;
+    position: fixed;
+    top: 10%;
+    left: 50%;
+
+    width: 960px;
+    height: 559px;
+    margin-left: -480px;
+
+    box-shadow: 0 10px 20px rgba(4, 6, 6, 0.2);
+
+    z-index: 10;
+}
+
+.popup-map iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    z-index: 11;
+}
+
+@keyframes bounce {
+	0% { transform: translateY(-2000px); }
+	70% { transform: translateY(30px); }
+	90% { transform: translateY(-10px); }
+	100% { transform: translateY(0); }
 }
 
 .block-show {
     display: block;
+}
+
+.popup-show {
+	display: block;
+	animation-name: bounce;
+	animation-duration: 0.6s;
+}
+
+@keyframes shake {
+	0%, 100% { transform: translateX(0); }
+	10%, 30%, 50%, 70%, 90% { transform: translateX(-10px); }
+	20%, 40%, 60%, 80% { transform: translateX(10px); }
+}
+
+.modal-error {
+	animation-name: shake;
+	animation-duration: 0.6s;
 }

@@ -101,7 +101,7 @@
                             </div>
                         </div>
     				</li>
-    				<li class="slider-item slider-smart-Watch">
+    				<li class="slider-item slider-smart-watch">
                         <div class="offers">
                             <img src="img/slider-2.png" alt="Фитнес-браслет" width="345" height="485">
                             <div class="slider-container">
@@ -171,7 +171,7 @@
                             <p>Фитнеc-браслеты</p>
                         </a>
     				</li>
-    				<li class="index-cotalog-item cotalog-smart-Watch">
+    				<li class="index-cotalog-item cotalog-smart-watch">
     					<a href="#">
                             <div class="icon-container"></div>
                             <p>Умные часы</p>
@@ -259,10 +259,10 @@
                 <section class="info-contacts">
                     <h3>Контакты</h3>
                     <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-                    <a href="#">
+                    <a href="#" class="map">
                         <img src="img/map.jpg" width="560" height="222" alt="г. Москва, ул. Строителей, 15">
                     </a>
-                    <a href="#" class="button">Напишите нам</a>
+                    <a href="#" class="button button-message">Напишите нам</a>
                 </section>
             </div>
         </main>
@@ -327,10 +327,10 @@
         <div class="popup popup-message">
             <form action="https://echo.htmlacademy.ru" method="post">
                 <label>
-                    Ваше имя:<input type="text" name="user-name" placeholder="Имя Фамилия">
+                    Ваше имя:<input type="text" name="user-name" placeholder="Имя Фамилия" >
                 </label>
                 <label>
-                    Ваш e-mail:<input type="email" name="user-email" placeholder="email@example.com">
+                    Ваш e-mail:<input type="email" name="user-email" placeholder="email@example.com" >
                 </label>
                 <label>
                     Текст письма:<textarea name="text-message" placeholder="В свободной форме"></textarea>
@@ -342,11 +342,13 @@
             </form>
         </div>
         <div class="popup popup-map">
-            <img src="img/map-big.jpg" alt="г. Москва, ул. Строителей, 15">
+            <iframe src="https://yandex.ru/map-widget/v1/-/CCGvZBkl" width="960" height="559" frameborder="1" allowfullscreen="true"></iframe>
+            <img src="img/map-big.jpg" alt="г. Москва, ул. Строителей, 15" width="960" height="559">
             <button type="button" class="button-close">
                 <span class="visually-hidden">Закрыть</span>
             </button>
         </div>
         <script src="http://localhost:35729/livereload.js"></script>
+		<script src="js/script.js"></script>
   </body>
   </html>
