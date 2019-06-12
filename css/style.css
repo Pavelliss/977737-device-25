@@ -122,7 +122,7 @@ img {
 }
 
 .button:active {
-    opacity: 0.3;
+    color: rgba(0, 0, 0, 0.3);
 }
 
 /*header*/
@@ -165,7 +165,6 @@ img {
             box-sizing: border-box;
     margin-top: 21px;
     margin-bottom: 26px;
-    /* Style for "logo" */
 width: 163px;
 height: 35px;
 }
@@ -296,12 +295,20 @@ height: 35px;
 }
 
 .form-search .search-button {
-    display: block;
-    padding: 0 18px;
-    padding-top: 7px;
+    margin: 0;
+    padding: 0;
+    padding: 0 17px;
+    /* padding-top: 5px; */
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
 
+    font-family: "opensans", "Arial", sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 30px;
+    letter-spacing: 0.01em;
+
+    background-color: #f7e296;
     opacity: 0;
 
     z-index: 1;
@@ -848,6 +855,7 @@ height: 35px;
     font-size: 13px;
     font-weight: 300;
     line-height: 20px;
+    color: #464646;
 }
 
 .table-slider td {
@@ -1067,6 +1075,18 @@ height: 35px;
 
 .service-active a::before {
     display: none;
+}
+
+.button-service:active {
+    background-color: #000000;
+}
+
+.button-service .button:active {
+    color: #f7e296;
+}
+
+.button-service .button:active::before {
+    background-color: #000000;
 }
 
 .service-item {
@@ -1519,6 +1539,11 @@ height: 35px;
 
 .range-controle .toggle-max {
     left: 107px;
+}
+
+.range-controle .toggle-min:active,
+.range-controle .toggle-max:active {
+    border: 9px solid #ffffff;
 }
 
 .price-controls {
@@ -2035,8 +2060,8 @@ height: 35px;
     background-color: #d8d8d8;
 }
 
-.back-next:active span {
-    opacity: 0.3;
+.back-next:active {
+    color: rgba(0, 0, 0, 0.3);
 }
 
 .pagination-list a {
@@ -2395,6 +2420,7 @@ height: 35px;
 .popup-message input:focus,
 .popup-message textarea:focus {
     background-color: #ffffff;
+    outline: 2px solid #f0c52e;
 }
 
 .popup-message input:invalid {
